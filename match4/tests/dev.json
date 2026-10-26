@@ -1,0 +1,69 @@
+[
+ {
+  "id": "d01",
+  "query": "What is the latest stable version of Python?",
+  "expect": [
+   "3.15.0",
+   "3.15"
+  ]
+ },
+ {
+  "id": "d02",
+  "query": "Who is the CEO of AMD?",
+  "expect": [
+   "Lisa Su"
+  ]
+ },
+ {
+  "id": "d03",
+  "query": "What is the latest version of the requests package on PyPI?",
+  "expect": [
+   "2.34.2"
+  ]
+ },
+ {
+  "id": "d04",
+  "query": "In what year was the Python Software Foundation founded?",
+  "expect": [
+   "2001"
+  ]
+ },
+ {
+  "id": "d05",
+  "query": "What is the capital city of Nigeria?",
+  "expect": [
+   "Abuja"
+  ]
+ },
+ {
+  "id": "d06",
+  "query": "What is the latest release version of the Linux kernel listed as stable?",
+  "url": "https://www.kernel.org/"
+ },
+ {
+  "id": "d07",
+  "query": "How many bytes are in a kibibyte?",
+  "expect": [
+   "1024"
+  ]
+ },
+ {
+  "id": "d08",
+  "query": "What is the default port number for PostgreSQL?",
+  "expect": [
+   "5432"
+  ]
+ },
+ {
+  "id": "d09",
+  "query": "Who founded the Rust programming language?",
+  "expect": [
+   "Graydon Hoare"
+  ]
+ },
+ {
+  "id": "d10",
+  "query": "What is the latest version of Node.js listed as LTS on the Node.js download page?",
+  "url": "https://nodejs.org/en/download"
+ }
+]

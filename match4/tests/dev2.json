@@ -1,0 +1,216 @@
+[
+ {
+  "id": "q01",
+  "query": "In what year was the Python Software Foundation founded?",
+  "expect": [
+   "2001"
+  ]
+ },
+ {
+  "id": "q02",
+  "query": "Who created the Rust programming language?",
+  "expect": [
+   "Graydon Hoare"
+  ]
+ },
+ {
+  "id": "q03",
+  "query": "What is the default port number for PostgreSQL?",
+  "expect": [
+   "5432"
+  ]
+ },
+ {
+  "id": "q04",
+  "query": "What is the default port Redis listens on?",
+  "expect": [
+   "6379"
+  ]
+ },
+ {
+  "id": "q05",
+  "query": "What is the default port for MongoDB?",
+  "expect": [
+   "27017"
+  ]
+ },
+ {
+  "id": "q06",
+  "query": "In what year was the Linux kernel first released?",
+  "expect": [
+   "1991"
+  ]
+ },
+ {
+  "id": "q07",
+  "query": "In what year was AMD founded?",
+  "expect": [
+   "1969"
+  ]
+ },
+ {
+  "id": "q08",
+  "query": "In which city is AMD headquartered?",
+  "expect": [
+   "Santa Clara"
+  ]
+ },
+ {
+  "id": "q09",
+  "query": "What is the atomic number of gold?",
+  "expect": [
+   "79"
+  ]
+ },
+ {
+  "id": "q10",
+  "query": "In what year did Nigeria gain independence?",
+  "expect": [
+   "1960"
+  ]
+ },
+ {
+  "id": "q11",
+  "query": "What is the ISO 4217 currency code of the Nigerian naira?",
+  "expect": [
+   "NGN"
+  ]
+ },
+ {
+  "id": "q12",
+  "query": "Who wrote the novel Things Fall Apart?",
+  "expect": [
+   "Chinua Achebe"
+  ]
+ },
+ {
+  "id": "q13",
+  "query": "Which HTTP status code means I'm a teapot?",
+  "expect": [
+   "418"
+  ]
+ },
+ {
+  "id": "q14",
+  "query": "Which RFC number defines HTTP Semantics, published in 2022?",
+  "expect": [
+   "9110",
+   "RFC 9110"
+  ]
+ },
+ {
+  "id": "q15",
+  "query": "Who created the JavaScript programming language?",
+  "expect": [
+   "Brendan Eich"
+  ]
+ },
+ {
+  "id": "q16",
+  "query": "In what year was the first iPhone released?",
+  "expect": [
+   "2007"
+  ]
+ },
+ {
+  "id": "q17",
+  "query": "What is the chemical symbol for tungsten?",
+  "expect": [
+   "W"
+  ]
+ },
+ {
+  "id": "q18",
+  "query": "Who is the CEO of NVIDIA?",
+  "expect": [
+   "Jensen Huang"
+  ]
+ },
+ {
+  "id": "q19",
+  "query": "In what year was Rust 1.0 released?",
+  "expect": [
+   "2015"
+  ]
+ },
+ {
+  "id": "q20",
+  "query": "What is the capital city of Nigeria?",
+  "expect": [
+   "Abuja"
+  ]
+ },
+ {
+  "id": "q21",
+  "query": "Who is the CEO of AMD?",
+  "expect": [
+   "Lisa Su"
+  ]
+ },
+ {
+  "id": "q22",
+  "query": "What is the name of AMD's open-source GPU compute software stack?",
+  "expect": [
+   "ROCm"
+  ]
+ },
+ {
+  "id": "l01",
+  "query": "What is the latest version of numpy on PyPI?",
+  "live": {
+   "pypi": "numpy"
+  }
+ },
+ {
+  "id": "l02",
+  "query": "What is the latest version of the react package on npm?",
+  "live": {
+   "npm": "react"
+  }
+ },
+ {
+  "id": "l03",
+  "query": "What is the version number of the latest release of the Rust compiler (rust-lang/rust on GitHub)?",
+  "live": {
+   "github": "rust-lang/rust"
+  }
+ },
+ {
+  "id": "l04",
+  "query": "What is the latest version of Django on PyPI?",
+  "live": {
+   "pypi": "Django"
+  }
+ },
+ {
+  "id": "l05",
+  "query": "What is the current stable version of Go?",
+  "live": {
+   "go": 1
+  },
+  "url": "https://go.dev/dl/"
+ },
+ {
+  "id": "l06",
+  "query": "What is the latest stable Linux kernel version?",
+  "live": {
+   "kernel": 1
+  },
+  "url": "https://www.kernel.org/"
+ },
+ {
+  "id": "l07",
+  "query": "What is the latest Python 3 release version?",
+  "live": {
+   "endoflife": "python"
+  },
+  "url": "https://www.python.org/downloads/"
+ },
+ {
+  "id": "l08",
+  "query": "What is the latest version of TypeScript on npm?",
+  "live": {
+   "npm": "typescript"
+  }
+ }
+]

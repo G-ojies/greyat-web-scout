@@ -1,0 +1,32 @@
+name: ci
+on: [push, workflow_dispatch]
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      AGENT_MODEL: ${{ github.workspace }}/qwen-tiny
+      AGENT_DEVICE: cpu
+      AGENT_HARD_LIMIT: '90'
+      AGENT_OUTPUT: ${{ github.workspace }}/out
+      AGENT_INDEX_WAIT_S: '300'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - name: Install (CPU torch stands in for ROCm torch)
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r match4/app/requirements.txt
+          python -c "import sys, torch, transformers, tokenizers; print(sys.version, torch.__version__, transformers.__version__, tokenizers.__version__)"
+      - name: Tiny model
+        run: python -c "from huggingface_hub import snapshot_download as d; d('Qwen/Qwen3-0.6B', local_dir='qwen-tiny')"
+      - name: Model call
+        run: python match4/tests/model_call.py
+      - name: End to end through app.py
+        run: |
+          python match4/app/app.py --warmup
+          python match4/tests/run_dev.py match4/tests/dev.json
+          tail -20 /tmp/agent.server.log
